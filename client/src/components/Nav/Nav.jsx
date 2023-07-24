@@ -1,17 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
-/* import SearchBar from '../SerchBar/SearchBar.jsx';
-import Logo from '../Logo.jsx'; */
+import SearchBar from '../SerchBar/SearchBar';
+/* import Logo from '../Logo.jsx'; */
 import { NavLink } from 'react-router-dom';
 
 const DivNav = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
+    background-color: blue
 `
-export const StyledLink = styled(NavLink)`
-  color: white;
+
+const StyledLink = styled(NavLink)`
+  color: black;
   font-size: 2vw;
   padding: 2vw;
   
@@ -24,14 +25,14 @@ export const StyledLink = styled(NavLink)`
     font-weight: 500; 
     padding-top: 1VW;
     transition: .8s;
-  }
-`;
+  };
+`
 
-export const StyledLogOut = styled(NavLink)`
+
+const StyledLogOut = styled(NavLink)`
   color: red;
   font-size: 2vw;
   padding: 2vw;
-  
   text-decoration: none;
   `
 
@@ -39,13 +40,17 @@ export const StyledLogOut = styled(NavLink)`
 
 
 export default function Nav(props) {
+    
     return (
         <DivNav>
             {/* <Logo /> */}
             <ul>
                 <div>
-                    <StyledLink to='/home' activeclassname="active">
+                    <StyledLink activeclassname="active" to='/home'>
                         Home
+                    </StyledLink>
+                    <StyledLink activeclassname="active" to="/create">
+                        Create
                     </StyledLink>
                     <StyledLink activeclassname="active" to="/abaut">
                         Abaut
@@ -55,9 +60,8 @@ export default function Nav(props) {
                     </StyledLogOut>
                 </div>
             </ul>
-            {/* <SearchBar
-                onSearch={props.onSearch}
-            /> */}
+            <SearchBar searchName={props.searchName} />
+
         </DivNav>
     )
-};
+}; 
