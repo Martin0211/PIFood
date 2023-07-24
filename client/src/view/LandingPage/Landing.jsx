@@ -11,7 +11,6 @@ justify-content: center;
 align-items: center;
 height: 6vw;
 margin-left: 15vw;
-
 `
 const DeH1 = styled.h1`
 display: flex;
@@ -19,7 +18,6 @@ justify-content: center;
 align-items: center;
 margin-top: 0;
 font-family: 'Indie Flower', cursive;
-
 `
 
 const FondoDiv = styled.div`
