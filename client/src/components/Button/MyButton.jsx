@@ -12,7 +12,7 @@ const MyButtonStyled = styled.button`
   &:hover {
     background-color: white;
     color: black;
-
+  }
 `
 
 const MyButton = ({ text, route }) => {
