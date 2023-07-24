@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Foto from '../Abaut/yo.jpg'
 
 const AbautH3 = styled.h3`
-color: white;
+color: black;
 `
 const ImgFoto = styled.img`
 width:15vw;
