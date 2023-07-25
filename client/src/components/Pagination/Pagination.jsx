@@ -5,12 +5,16 @@ const PaginationContainer = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  padding-bottom: 5vw;
 `;
 
 const PageButton = styled.button`
   margin: 0 5px;
   padding: 5px 10px;
-  background-color: ${(props) => (props.$active ? "#007bff" : "#f0f0f0")};
+  border-radius: .5vw;
+  font-family: 'ubuntu', sans-serif;
+  font-weight: 300;
+  background-color: ${(props) => (props.$active ? "#a846a0" : "#f0f0f0")};
   color: ${(props) => (props.$active ? "#fff" : "initial")};
   border: 1px solid #ccc;
   cursor: pointer;

@@ -45,7 +45,9 @@ text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 bl
 `
 const NombreH1 = styled.h1`
 font-size: 5vw;
-font-family: 'Indie Flower', cursive;
+font-family: 'Ubuntu', serif ;
+font-weight: 300;
+font-style: italic;
 color: #a846a0;
 text-shadow: -1px -1px 0 #272d2d, 1px -1px 0 #272d2d, -1px 1px 0 #272d2d, 1px 1px 0 #272d2d;
 

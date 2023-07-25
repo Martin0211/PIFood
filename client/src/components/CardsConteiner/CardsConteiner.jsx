@@ -13,8 +13,10 @@ const CardsWrapper = styled.div`
 `;
 
 
+
+
 // Definimos nuestro componente funcional CardsContainer
-const CardsContainer = () => {
+const CardsContainer = (props) => {
    // Obtenemos el dispatch de Redux para disparar acciones
    const dispatch = useDispatch();
    // Utilizamos useSelector para obtener datos del estado de Redux
@@ -55,9 +57,9 @@ const CardsContainer = () => {
    };
 
    // Función para manejar el cambio de página
-   const handlePageChange = (pageNumber) => {
+    const handlePageChange = (pageNumber) => {
       setCurrentPage(pageNumber);
-   };
+   }; 
    
    // Lógica para obtener las recetas que se mostrarán en la página actual con el filtro y orden aplicados
    const filterAndSortRecipes = recipes

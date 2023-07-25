@@ -9,15 +9,14 @@ background-attachment: fixed;
 background-size: cover;
 background-position: right bottom;
 margin: 0;
-height: 100vh;
+height: 100%;
 `
 
 const Home = (props) => {
     return (
         <FondoDiv>
             <div>
-                <h1>esta es la vista de Home</h1>
-                <CardsContainer searchName={props.searchName} />
+                <CardsContainer searchName={props.searchName}/>
             </div>
         </FondoDiv>
     );

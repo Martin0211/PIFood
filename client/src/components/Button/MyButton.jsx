@@ -4,13 +4,13 @@ import styled from 'styled-components';
 const MyButtonStyled = styled.button`
   border: 2px solid white;
   background-color: transparent;
-  color: white;
+  color: #f6f8ff;
   padding: 1.5vw 6vw;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.3s ease;
   &:hover {
-    background-color: white;
+    background-color: #f6f8ff;
     color: black;
   }
 `
