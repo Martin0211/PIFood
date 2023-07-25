@@ -5,12 +5,12 @@ const { v4: uuidv4 } = require('uuid');
 module.exports = (sequelize) => {
     // defino el modelo
     sequelize.define('Diets', {
-    id: {
-      type: DataTypes.UUID,
-      primaryKey: true,
-      defaultValue: uuidv4(), 
-      allowNull: false,
-    },
+      id: {
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true,
+        allowNull: false,
+      },
     name: {
       type: DataTypes.STRING,
       allowNull: false,
