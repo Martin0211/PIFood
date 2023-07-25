@@ -3,33 +3,58 @@ import styled from 'styled-components';
 import Foto from '../Abaut/yo.jpg'
 
 const AbautH3 = styled.h3`
-color: black;
+    font-family: 'ubuntu',sans-serif;
+    font-weight: 300;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-size: 1.2vw;
 `
 const ImgFoto = styled.img`
 width:15vw;
-
 border-radius: 999vw;
 `
 
+const Div = styled.div`
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(https://i.ibb.co/FHTNKNH/Fondo-Abaut.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: right bottom;
+    overflow: hidden;
+    margin: 0;
+    height: 700vw;
+    `
+    const DivLetras = styled.div`
+    background-color: #ffffffa6;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    border-radius: 3vw;
+    `
+
 export default function Nav(props) {
     return (
-        <div>
-            <ImgFoto src={Foto} alt="not found" />
+        <Div>
+           <ImgFoto src={Foto} alt="not found" />
+            <DivLetras>
             <AbautH3>
-                Bienvenido a la aplicación web de 'Rick and Morty' creada por Martin Balnco mejor conocido como Mr.White. Soy un desarrollador apasionado y comprometido que está actualmente participando en el Bootcamp de programación de Soy Henry. Esta aplicación web es el resultado de mi deseo de practicar y mejorar mis habilidades en el desarrollo web, mientras que también satisface mi interés en la popular serie animada 'Rick and Morty'.
-                <br />
-                <br />
+                ¡Bienvenido a FOOD, la aplicación web creada por Martin Blanco, también conocido como Mr. White! Este es mi Proyecto Individual (PI) del Bootcamp de programación de Soy Henry, donde he puesto toda mi pasión y compromiso en su desarrollo.<br/><br/>
 
-                A través de esta aplicación, podrás explorar de manera fácil y rápida información detallada sobre los personajes de la serie. 
-                <br /><br />
-                
-                Como parte de mi formación en el Bootcamp, he adquirido conocimientos en tecnologías modernas de desarrollo web como JavaScrip, React, Redux, CSS, HTML y otras herramientas que he utilizado para crear esta aplicación. <br /><br />
+                FOOD es una plataforma culinaria para los amantes de la gastronomía. Explora, comparte y descubre una amplia variedad de deliciosas recetas. Encuentra inspiración en categorías de platos, desde entrantes hasta postres.<br/><br/>
 
-                Además de mi experiencia en el desarrollo web, también tengo años de experiencia en el área de modela 3D e imprecion 3D, mercadeo, marketing digital, ventas e impulso de productos, así como en reparación y mantenimiento de equipos electrónicos y redes. Estoy constantemente actualizando mis conocimientos y habilidades, y la creación de esta aplicación es una oportunidad para aplicar todo lo que he aprendido.
-                <br /><br />
+                Agrega tus propias recetas únicas y compártelas con la comunidad de FOOD. Los usuarios pueden explorar diferentes dietas y tipos de alimentos, convirtiendo esta aplicación en un valioso recurso para aquellos con preferencias dietéticas específicas.<br/><br/>
 
-                Espero que disfrutes usando nuestra aplicación web y descubriendo más sobre los personajes de 'Rick and Morty'. No dudes en contactarme si tienes alguna pregunta o comentario. ¡Gracias por visitarnos!
+                Mi formación en el Bootcamp me ha brindado conocimientos en tecnologías modernas como JavaScript, React, Redux, CSS, HTML, DB, NodeJS, SQL, entre otras, que he utilizado para crear esta aplicación.<br/><br/>
+
+                Además de mi experiencia en desarrollo web, tengo conocimientos en modelado 3D e impresión 3D, mercadeo, marketing digital, ventas, reparación y mantenimiento de equipos electrónicos y redes.<br/><br/>
+
+                ¡Disfruta explorando el delicioso mundo de la comida a través de FOOD!<br/><br/>
+
             </AbautH3>
-        </div>
+        </DivLetras>
+        </Div>
+            
     )
 };

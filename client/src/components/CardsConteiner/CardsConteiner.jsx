@@ -7,9 +7,9 @@ import { getRecipeAll, getDietsAll } from '../../redux/actions';
 import FilterOptions from '../Filter/FilterOptions.jsx';
 
 const CardsWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
 `;
 
 
