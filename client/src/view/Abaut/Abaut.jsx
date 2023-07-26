@@ -7,11 +7,12 @@ const AbautH3 = styled.h3`
     font-weight: 300;
     padding-left: 10vw;
     padding-right: 10vw;
-    font-size: 1.2vw;
+    font-size: 1.06vw;
 `
 const ImgFoto = styled.img`
 width:15vw;
 border-radius: 999vw;
+margin: 1vw;
 `
 
 const Div = styled.div`

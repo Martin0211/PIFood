@@ -37,7 +37,7 @@ const DivInfo = styled.div`
     font-family: 'ubuntu', sans-serif;
     font-weight: 300;
     color: #50514f;
-    font-size: 1.vw;
+    font-size: 1vw;
     margin-left: 3vw;
     padding-right: 2vw;
     height: 50vw;
