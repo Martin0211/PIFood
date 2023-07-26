@@ -70,7 +70,7 @@ export default function Nav(props) {
                             Create
                         </StyledLink>
                         <StyledLink activeclassname="active" to="/abaut">
-                            Abaut
+                            About
                         </StyledLink>
                     </DivButton>
                     <SearchBar searchName={props.searchName} />

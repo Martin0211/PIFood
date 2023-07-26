@@ -152,6 +152,8 @@ const Form = () => {
   });
 
 
+
+
   const handleChange = (event) => {
     const { name, value, type, checked } = event.target;
     if (type === "checkbox") {
@@ -186,7 +188,7 @@ const Form = () => {
     if (Object.keys(errors).length) {
       window.alert("Debes corregir los errores");
     } else {
-      console.log(formData)
+      window.alert("Receta creada exitosamente");
       dispatch(postCreateRecipe(formData));
       setFormData({
         title: "",
