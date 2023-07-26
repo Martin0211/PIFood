@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import SearchBar from '../SerchBar/SearchBar';
-/* import Logo from '../Logo.jsx'; */
 import { NavLink } from 'react-router-dom';
 
 const DivNav = styled.div`

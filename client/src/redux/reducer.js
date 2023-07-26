@@ -2,7 +2,7 @@ import { GET_RECIPE_BY_NAME, GET_RECIPE_BY_ID, GET_RECIPE_ALL, POST_CREATE_RECIP
 
 
 const initialState = {
-    recipes: [	{
+    recipes: [	/* {
 		"vegetarian": true,
 		"vegan": false,
 		"glutenFree": true,
@@ -10644,8 +10644,8 @@ const initialState = {
 		],
 		"spoonacularSourceUrl": "https://spoonacular.com/butternut-squash-arugula-and-goat-cheese-quinoa-636608"
 	}
-],
-    details: [{
+ */],
+    details: [/* {
         "id": 2,
         "title": "Anchovies Appetizer With Breadcrumbs & Scallions",
         "image": "https://spoonacular.com/recipeImages/2-556x370.jpg",
@@ -10656,9 +10656,9 @@ const initialState = {
             "dairy free",
             "pescatarian"
         ]
-    }],
+    } */],
     recipesLoaded: false,
-    diets: [[
+    diets: [/* [
         "gluten free",
         "dairy free",
         "lacto ovo vegetarian",
@@ -10666,7 +10666,7 @@ const initialState = {
         "paleolithic",
         "primal",
         "whole 30"
-    ]],
+    ] */],
     dietsLoaded: false,
 };
 
