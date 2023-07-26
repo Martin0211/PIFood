@@ -27,6 +27,10 @@ const CardsContainer = (props) => {
    const [currentPage, setCurrentPage] = useState(1);
    const [postsPerPage] = useState(9);
 
+   const Div =styled.div`
+   overflow: visible;
+   `
+
    // Utilizamos useEffect para cargar las recetas si aún no se han cargado
    useEffect(() => {
       if (!recipesLoaded) {
@@ -89,7 +93,7 @@ const CardsContainer = (props) => {
    const currentPosts = filterAndSortRecipes.slice(indexOfFirstPost, indexOfLastPost);
 
 
-   return (<div>
+   return (<Div>
       <FilterOptions onSortChange={handleSortChange} onFilterChange={handleFilterChange} />
       <CardsWrapper>
          {currentPosts.map(({ id, title, image, diets }) => (
@@ -101,7 +105,7 @@ const CardsContainer = (props) => {
             />))}
       </CardsWrapper>
       <Pagination currentPage={currentPage} totalPages={Math.ceil(filterAndSortRecipes.length / postsPerPage)} onPageChange={handlePageChange} />
-   </div>
+   </Div>
    );
 };
 

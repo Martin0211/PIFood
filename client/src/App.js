@@ -11,7 +11,7 @@ const GlobalStyles = createGlobalStyle`
       display: block;
       margin: 0;
       padding: 0;
-      overflow: hidden;
+      overflow: ${props => (props.showOverflow ? 'auto' : 'hidden')};
   }
 `;
 
@@ -31,7 +31,7 @@ function App(props) {
 
   return (
     <>
-    <GlobalStyles/> 
+    <GlobalStyles showOverflow={location.pathname === '/home'} /> 
     <div className="App">
       <link rel="preconnect" href="https://fonts.googleapis.com"></link>
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin = "true"></link>
