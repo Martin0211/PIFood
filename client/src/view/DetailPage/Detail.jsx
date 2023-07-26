@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { getRecipeById } from '../../redux/actions';
 
 const H6Parrafo = styled.h6`
-font-size: 1vw;
+font-size: .95vw;
 `
 const H1Titulo = styled.h1`
 font-family: 'Quicksand', sans-serif;
@@ -34,13 +34,13 @@ const MyButtonStyled = styled.button`
   `
 
 const DivInfo = styled.div`
-font-family: 'ubuntu', sans-serif;
+    font-family: 'ubuntu', sans-serif;
     font-weight: 300;
     color: #50514f;
-    font-size: 1.5vw;
-margin-left: 3vw;
-padding-right: 2vw;
-height: 50vw;
+    font-size: 1.vw;
+    margin-left: 3vw;
+    padding-right: 2vw;
+    height: 50vw;
 `
 const Img = styled.img`
 width: 30vw;
@@ -50,6 +50,9 @@ const DivPrincipal = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
+position: fixed; 
+left: 0;
+right: 0; 
 background-image: url(https://img.freepik.com/free-photo/flat-lay-different-ingredients-composition-with-copy-space_23-2148541885.jpg?w=826&t=st=1690329206~exp=1690329806~hmac=d518aa8e310127ffba26231c744c2173021948614dbb7db92103f47b242a7a8a);
 background-repeat: no-repeat;
 background-attachment: fixed;
