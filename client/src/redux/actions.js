@@ -14,13 +14,20 @@ export const getRecipeByName = (name) => {
         dispatch({type: GET_RECIPE_BY_NAME, payload: recipe});
     }
 };
+
 export const getRecipeAll = () => {
     return async function (dispatch) {
-        const apiData = await axios.get(`http://localhost:3001/allrecipes`);
-        const recipe = apiData.data;
-        dispatch({type: GET_RECIPE_ALL, payload: recipe});
+    try {
+            const apiData = await axios.get(`http://localhost:3001/allrecipes`);
+            const recipe = apiData.data;
+            dispatch({type: GET_RECIPE_ALL, payload: recipe});
+        
+    } catch (error) { window.alert(error)
+        
     }
-};
+
+}};
+
 export const getRecipeById = (id) => {
     return async function (dispatch) {
         const apiData = await axios.get(`http://localhost:3001/recipes/${id}`);
